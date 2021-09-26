@@ -4,18 +4,23 @@ Functional Validation Library Version1 By TurkishCodeMan
 
 ## Install
 ```
- npm install valid-functional-lib
+ npm install validate-functional-lib
  ```
 
 # Usings
 
 ```
-import {Validate,isEmail,isPresent} from "valid-functional-lib";
+import {Library Valid} from "valid-functional-lib";
 
 Creating A Validation Object
-const validation={name:isPresent,email:isEmail}
+ const { Validate, isEmail, isPresent, flatterArray,errorFinder } = LibraryValid;
 
-const response=Validate(validation,yourObj);
+  const validation = { name: isPresent, email: isEmail };
+
+  const res =
+    Validate(validation, { name: 'aaa', email: 'asdsd' }, flatterArray);
+
+  console.log(res)
 
 Finished ! Easy Cool Using.
 ```
