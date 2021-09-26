@@ -56,7 +56,7 @@ const errorFinder = (result) => {
 
 
 
-export default {
+export {
     Validate,
     flatterArray,
     errorFinder,
